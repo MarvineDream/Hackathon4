@@ -1,0 +1,273 @@
+<html>
+  <head>
+    <base href=http://127.0.0.1:5500//>
+    <title>Ecole241 - Actualités et Événements</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+      :root {
+        --primary-color: black;
+        --secondary-color: #fcd116;
+        --text-color: #333;
+        --bg-color: #f5f5f5;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 2rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 6rem 2rem 2rem;
+        display: flex;
+        gap: 2rem;
+      }
+
+      .blog-section {
+        flex: 2;
+      }
+
+      .events-section {
+        flex: 1;
+      }
+
+      h1,
+      h2 {
+        color: var(--primary-color);
+      }
+
+      .blog-post {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+      }
+
+      .blog-post img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .blog-post-content {
+        padding: 1.5rem;
+      }
+
+      .blog-post h3 {
+        margin-top: 0;
+      }
+
+      .category {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: 0.3rem 0.6rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .event {
+        background-color: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .event h3 {
+        margin-top: 0;
+      }
+
+      .event-date {
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: 0.6rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #ffe156;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Ecole241</div>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="/Pages/formations.html">Formations</a></li>
+          <li><a href="/Pages/inscriptions.html">Inscription</a></li>
+          <li><a href="/Pages/actualites.html">Actualités</a></li>
+          <li><a href="/Pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="blog-section">
+        <h1>Actualités</h1>
+        <div class="blog-post">
+          <img
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Étudiants travaillant sur des ordinateurs"
+            width="600"
+            height="400"
+          />
+          <div class="blog-post-content">
+            <span class="category">Formation</span>
+            <h3>
+              Lancement de notre nouvelle formation en Intelligence Artificielle
+            </h3>
+            <p>
+              Ecole241 est fière d'annoncer le lancement de sa toute nouvelle
+              formation en Intelligence Artificielle, conçue pour répondre aux
+              besoins croissants du marché gabonais en experts IA.
+            </p>
+            <a href="/actualites/nouvelle-formation-ia" class="cta-button"
+              >Lire la suite</a
+            >
+          </div>
+        </div>
+        <div class="blog-post">
+          <img
+            src="https://images.unsplash.com/photo-1546822917-1560f0785d8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Cérémonie de remise des diplômes"
+            width="600"
+            height="400"
+          />
+          <div class="blog-post-content">
+            <span class="category">Événement</span>
+            <h3>Cérémonie de remise des diplômes 2023</h3>
+            <p>
+              Retour sur la cérémonie de remise des diplômes de la promotion
+              2023, une journée remplie d'émotions et de fierté pour nos
+              étudiants et leurs familles.
+            </p>
+            <a href="/actualites/ceremonie-diplomes-2023" class="cta-button"
+              >Lire la suite</a
+            >
+          </div>
+        </div>
+        <div class="blog-post">
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Partenariat avec une entreprise"
+            width="600"
+            height="400"
+          />
+          <div class="blog-post-content">
+            <span class="category">Partenariat</span>
+            <h3>Symplon notre premier partenaire</h3>
+            <p>
+              Ecole241 est heureuse d'annoncer son nouveau partenariat avec
+              TechAfrica, ouvrant de nouvelles opportunités de stages et
+              d'emplois pour nos étudiants dans toute l'Afrique.
+            </p>
+            <a href="/Pages/patenaire.html" class="cta-button">Lire la suite</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section">
+        <h2>Événements à venir</h2>
+        <div class="event">
+          <h3>Journée Portes Ouvertes</h3>
+          <p class="event-date">15 juillet 2023</p>
+          <p>
+            Venez découvrir nos locaux, rencontrer nos formateurs et en
+            apprendre plus sur nos programmes de formation.
+          </p>
+          <a href="/evenements/journee-portes-ouvertes" class="cta-button"
+            >S'inscrire</a
+          >
+        </div>
+        <div class="event">
+          <h3>Hackathon Ecole241 x StartupWeekend</h3>
+          <p class="event-date">22-24 septembre 2023</p>
+          <p>
+            Participez à notre hackathon annuel en partenariat avec
+            StartupWeekend et développez des solutions innovantes pour le Gabon.
+          </p>
+          <a href="/evenements/hackathon-2023" class="cta-button">S'inscrire</a>
+        </div>
+        <div class="event">
+          <h3>Conférence : L'IA au service du développement africain</h3>
+          <p class="event-date">5 octobre 2023</p>
+          <p>
+            Une conférence passionnante sur l'impact de l'Intelligence
+            Artificielle sur le développement économique en Afrique.
+          </p>
+          <a href="/evenements/conference-ia-afrique" class="cta-button"
+            >S'inscrire</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Add any necessary JavaScript here, for example:
+      // - Pagination for blog posts
+      // - Filter blog posts by category
+      // - AJAX for event registration
+    </script>
+  </body>
+</html>

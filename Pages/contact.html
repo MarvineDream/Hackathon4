@@ -1,0 +1,266 @@
+<html>
+  <head>
+    <base href=http://127.0.0.1:5500//>
+    <title>Ecole241 - Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+      :root {
+        --primary-color: black;
+        --secondary-color: #fcd116;
+        --text-color: #333;
+        --bg-color: #f5f5f5;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 2rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 6rem 2rem 2rem;
+        display: flex;
+        gap: 2rem;
+      }
+
+      .contact-form {
+        flex: 1;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-info {
+        flex: 1;
+      }
+
+      h1,
+      h2 {
+        color: var(--primary-color);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-top: 1rem;
+        font-weight: 600;
+      }
+
+      input,
+      textarea {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: inherit;
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 0.8rem;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #ffe156;
+      }
+
+      .contact-details {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+      }
+
+      .map {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        transition: color 0.3s ease;
+      }
+
+      .social-icon:hover {
+        color: var(--secondary-color);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Ecole241</div>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/formations">Formations</a></li>
+          <li><a href="/inscription">Inscription</a></li>
+          <li><a href="/actualites">Actualités</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="contact-form">
+        <h1>Contactez-nous</h1>
+        <form action="/submit-contact" method="GET">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+
+      <section class="contact-info">
+        <div class="contact-details">
+          <h2>Informations de contact</h2>
+          <p>
+            <strong>Adresse :</strong> 2451 Boulevard de l'Indépendance,
+            Libreville, Gabon
+          </p>
+          <p><strong>Téléphone :</strong> +241 77 12 34 56</p>
+          <p>
+            <strong>Email :</strong>
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="71121e1f051012053114121e1d144345405f1610"
+              >[email&#160;protected]</a
+            >
+          </p>
+
+          <h3>Suivez-nous</h3>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/ecole241"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.twitter.com/ecole241"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/ecole241"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ecole241"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15930.177183386741!2d9.447558674216518!3d0.3925691739766564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f3b75d61a139f%3A0x2f54e4cae6df8bc8!2sLibreville%2C%20Gabon!5e0!3m2!1sen!2sus!4v1623252357889!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        // Here you would typically send the form data to your server
+        // For demonstration, we're just showing an alert
+        alert(
+          "Merci pour votre message ! Nous vous répondrons dans les plus brefs délais."
+        );
+      });
+    </script>
+  </body>
+</html>

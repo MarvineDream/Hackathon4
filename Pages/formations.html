@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <base href=http://127.0.0.1:5500//>
+    <title>Ecole241 - Nos Formations</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+      :root {
+        --primary-color: black;
+        --secondary-color: #fcd116;
+        --text-color: #333;
+        --bg-color: #f5f5f5;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 2rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 6rem 2rem 2rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+      }
+
+      .formation-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .formation-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .formation-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .formation-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .formation-content {
+        padding: 1.5rem;
+      }
+
+      .formation-title {
+        font-size: 1.25rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .formation-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: 0.6rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #ffe156;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Ecole241</div>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="inscriptions.html">Inscription</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <h1>Nos Formations</h1>
+      <div class="formation-list">
+        <div class="formation-card">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+            alt="Développement Web"
+            class="formation-image"
+            width="300"
+            height="200"
+          />
+          <div class="formation-content">
+            <h2 class="formation-title">Développement Web / Web Mobile</h2>
+            <p class="formation-description">
+              Devenez un acteur majeur dans la création de sites web et
+              d'applications mobiles. Maîtrisez les langages de programmation
+              les plus demandés et les frameworks modernes, afin d'etre
+              compétitif et competent.
+            </p>
+            <a href="/formations/developpement-web" class="cta-button"
+              >En savoir plus</a
+            >
+          </div>
+        </div>
+        <div class="formation-card">
+          <img
+            src="https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Marketing Digital"
+            class="formation-image"
+            width="300"
+            height="200"
+          />
+          <div class="formation-content">
+            <h2 class="formation-title">Marketing Digital</h2>
+            <p class="formation-description">
+              Formez-vous aux métiers du marketing digital et de la
+              communication en ligne. Apprenez à élaborer des stratégies
+              numériques performantes.
+            </p>
+            <a href="/formations/referent-digital" class="cta-button"
+              >En savoir plus</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // Add any necessary JavaScript here
+    </script>
+  </body>
+</html>
